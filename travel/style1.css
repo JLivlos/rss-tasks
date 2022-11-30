@@ -1,0 +1,297 @@
+    .login-off {
+        display: flex;
+    }
+    
+    .сreate-off {
+        display: none;
+    }
+    
+    .popup {
+        z-index: 12;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        left: 50%;
+        margin-left: -325px;
+        width: 650px;
+        background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        transform: translate(0, -140%);
+        transition: 1s;
+    }
+    
+    .popup.active {
+        transform: translate(0, 0%);
+        top: 50%;
+        margin-top: -325px;
+    }
+    
+    .overlay {
+        content: "";
+        z-index: 11;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .overlay.active {
+        position: absolute;
+    }
+    
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .h-login-pop,
+    .h-create-pop {
+        margin: 25px 0 30px 0;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #0D606F;
+    }
+    
+    .login-facebook-button {
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 86%;
+        height: 56px;
+        background: #1877F2;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    
+    .login-google-button {
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 86%;
+        height: 56px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #0D606F;
+    }
+    
+    .login-pop-or {
+        margin: 0 auto 10px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .or-left,
+    .or-right {
+        width: 261px;
+        height: 0px;
+        left: 344px;
+        top: 267px;
+        border: 1px solid rgba(13, 96, 111, 0.5);
+    }
+    
+    .or {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(13, 96, 111, 0.5);
+    }
+    
+    .sign-in-button {
+        margin: 0 auto 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86%;
+        height: 56px;
+        background: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    
+    .login-form {
+        margin: 0 auto 23px;
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #0D606F;
+    }
+    
+    .email:active,
+    .email:hover,
+    .email:focus,
+    .password:active,
+    .password:hover,
+    .password:focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+    
+    .email-block,
+    .password-block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .email,
+    .password {
+        width: 98%;
+        height: 54px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        border: none;
+        padding-left: 2%;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #0D606F;
+    }
+    
+    .forgot {
+        margin: 0 auto 26px;
+    }
+    
+    a {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #0D606F;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    }
+    
+    .line-login {
+        margin: 0 auto 20px;
+        width: 560px;
+        height: 0px;
+        left: 45px;
+        top: 598px;
+        border: 1px solid rgba(13, 96, 111, 0.5);
+        transform: rotate(0.1deg);
+    }
+    
+    .forgot a:hover,
+    .forgot a:focus,
+    #to-create:hover,
+    #to-create:focus,
+    #to-login:hover,
+    #to-login:focus,
+    .register-link span:hover,
+    .register-link span:focus,
+    .have-acc-link span:hover,
+    .have-acc-link span:focus {
+        color: #F2785C;
+        text-decoration-color: #F2785C;
+        cursor: pointer;
+    }
+    
+    .line-create {
+        margin: 17px auto 20px;
+        width: 560px;
+        height: 0px;
+        left: 45px;
+        top: 598px;
+        border: 1px solid rgba(13, 96, 111, 0.5);
+        transform: rotate(0.1deg);
+    }
+    
+    .register-link {
+        margin: 0 auto 23px;
+        text-decoration: none;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(13, 96, 111, 0.5);
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    }
+    
+    .register-link span {
+        margin-left: 5px;
+        color: rgba(13, 96, 111);
+        text-decoration: underline;
+        text-decoration-color: rgba(13, 96, 111);
+    }
+    
+    .have-acc-link {
+        margin: 0 auto 23px;
+        text-decoration: none;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(13, 96, 111, 0.5);
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    }
+    
+    .have-acc-link span {
+        margin-left: 5px;
+        color: rgba(13, 96, 111);
+        text-decoration: underline;
+        text-decoration-color: rgba(13, 96, 111);
+    }
+    
+    @media screen and (max-width: 670px) {
+        .popup {
+            left: 50%;
+            margin-left: -42%;
+            width: 85%;
+        }
+        .login-pop-or {
+            width: 86%;
+        }
+        .line-login,
+        .line-create {
+            width: 86%;
+        }
+    }

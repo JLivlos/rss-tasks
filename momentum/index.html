@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>momentum</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="button-settings">
+        </div>
+        <div class="player-weather">
+            <div class="player">
+                <div class="player-wrapper">
+                    <div class="player-features">
+                        <div class="player-controls">
+                            <button class="play-prev player-icon"></button>
+                            <button class="play player-icon"></button>
+                            <button class="play-next player-icon"></button>
+                        </div>
+                        <div class="track-and-timeline">
+                            <div class="track-name"></div>
+                            <div class="timeline">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-and-volume">
+                                <div class="track-time">
+                                    <div class="current">0:00</div>
+                                    <div class="divider">/</div>
+                                    <div class="length"></div>
+                                </div>
+                                <div class="volume-container">
+                                    <div class="volume-button">
+                                        <div class="volume-on"><img src="assets/svg/volume.svg"></div>
+                                        <div class="volume-off"><img src="assets/svg/volumeoff.svg"></div>
+                                    </div>
+                                    <div class="volume-slider">
+                                        <div class="volume-percentage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="play-list"></ul>
+            </div>
+            <div class="todo-container">
+                <div class="title-and-button">
+                    <p class="todos-title">To Do List</p>
+                    <div class="eye-icon"></div>
+                </div>
+                <div class="todo-wrapper">
+                    <div class="input-and-button">
+                        <input type="text" class="todo-input" placeholder="Add task">
+                        <div class="add-task-icon"><img src="assets/svg/addtodo.svg"></div>
+                    </div>
+                    <ul class="todos">
+                    </ul>
+                    <div id="buttons">
+                        <button class="clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-and-settings">
+                <div class="weather">
+                    <input type="text" class="city" placeholder="[Enter city]" />
+                    <i class="weather-icon owf weather-info"></i>
+                    <div class="weather-error"></div>
+                    <div class="description-container weather-info">
+                        <span class="temperature"></span>
+                        <span class="weather-description"></span>
+                    </div>
+                    <div class="wind weather-info"></div>
+                    <div class="humidity weather-info"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings">
+            <div class="title-and-close">
+                <div class="title-setting"></div>
+                <div class="settings-close"></div>
+            </div>
+            <div class="settings-items">
+                <div class="language-setting">
+                    <p class="lang-title"></p>
+                    <div class="en-item">
+                        <input class="lang en-lang" type="radio" name="language" value="en">
+                        <p class="en-title">English</p>
+                    </div>
+                    <div class="be-item">
+                        <input class="lang be-lang" type="radio" name="language" value="by">
+                        <p class="be-title">Belarusian</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p class="photo-setting"></p>
+                <label class="github-item"><input class="imgs" type="radio" name="photo-source" value="github"> Github</label>
+                <label class="unsplash-item"><input class="imgs" type="radio" name="photo-source" value="unsplash"> Unsplash</label>
+                <label class="flickr-item"><input class="imgs" type="radio" name="photo-source" value="flickr"> Flickr</label>
+                <input type="text" class="api-tag" placeholder="Enter tag..." />
+                <div class="line"></div>
+                <div class="blocks-setting">Blocks</div>
+                <div class="player-item">
+                    <input id="pl" class="blocks-vis" type="checkbox" name="blocks-on" value="audio">
+                    <label for="pl" class="player-title">Player</label>
+                </div>
+                <div class="todo">
+                    <input id="td" class="blocks-vis" type="checkbox" name="blocks-on" value="todo">
+                    <label for="td" class="todo-title">ToDo</label>
+                </div>
+                <div class="weather-item">
+                    <input id="wt" class="blocks-vis" type="checkbox" name="blocks-on" value="weather">
+                    <label for="wt" class="weather-title">Weather</label>
+                </div>
+                <div class="time-item">
+                    <input id="tm" class="blocks-vis" type="checkbox" name="blocks-on" value="time">
+                    <label for="tm" class="time-title">Time</label>
+                </div>
+                <div class="date-item">
+                    <input id="dt" class="blocks-vis" type="checkbox" name="blocks-on" value="date">
+                    <label for="dt" class="date-title">Date</label>
+                </div>
+                <div class="greeting-item">
+                    <input id="gr" class="blocks-vis" type="checkbox" name="blocks-on" value="greeting">
+                    <label for="gr" class="greeting-title">Greeting</label>
+                </div>
+                <div class="quote-item">
+                    <input id="qt" class="blocks-vis" type="checkbox" name="blocks-on" value="quote">
+                    <label for="qt" class="quote-title">Quote</label>
+                </div>
+            </div>
+            <div class="apply-settings"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider-icons">
+            <button class="slide-prev slider-icon"></button>
+            <button class="slide-next slider-icon"></button>
+        </div>
+        <div class="time-block"><time class="time"></time></div>
+        <div class="date-block">
+            <date class="date"></date>
+        </div>
+        </div>
+        <div class="greeting-container">
+            <span class="greeting"></span>
+            <input type="text" class="name" placeholder />
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="quotes">
+            <button class="change-quote"></button>
+            <div>
+                <div class="quote"></div>
+                <div class="author"></div>
+            </div>
+        </div>
+        <div class="credits">
+            <div class="github">
+                <a href="https://github.com/JLivlos" title="Github"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--entypo-social" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="entypo-social:github" style="color: white; font-size: 20px;"><path fill="currentColor" d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z"></path></svg></a>
+            </div>
+            <div class="date">
+                2022
+            </div>
+            <div class="rss-logo">
+                <a href="https://rs.school/js/" title="The Rolling Scopes. JavaScript/Front-end"><img src="assets/svg/rssjslogo.svg"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

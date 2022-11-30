@@ -1,0 +1,134 @@
+[{
+        "name": "GIANT PANDA",
+        "location": "Native to China",
+        "image": "../../assets/images/pets/pandas.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "CHEETAH",
+        "location": "Native to Africa",
+        "image": "../../assets/images/pets/cheetahs.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "EAGLE",
+        "location": "Native to South America",
+        "image": "../../assets/images/pets/eagles.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "GORILLA",
+        "location": "Native to Congo",
+        "image": "../../assets/images/pets/gorillas.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "TWO-TOED SLOTH",
+        "location": "Native to South America",
+        "image": "../../assets/images/pets/sloth.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "PENGUIN",
+        "location": "Native to Antarctica",
+        "image": "../../assets/images/pets/penguins.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "FOX",
+        "location": "All of Europe",
+        "image": "../../assets/images/pets/fox.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "HYENA",
+        "location": "Native to Africa",
+        "image": "../../assets/images/pets/hyena.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "ZUBR",
+        "location": "Native to Eastern Europe",
+        "image": "../../assets/images/pets/zubr.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "WOLF",
+        "location": "Native to Eastern Europe",
+        "image": "../../assets/images/pets/wolf.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "RACOON",
+        "location": "Native to North America",
+        "image": "../../assets/images/pets/racoon.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "BAIKAL SEAL",
+        "location": "Native to Russia",
+        "image": "../../assets/images/pets/seal.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "CARDINAL",
+        "location": "Native to Canada, USA",
+        "image": "../../assets/images/pets/cardinal.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "MANUL",
+        "location": "Native to Asia",
+        "image": "../../assets/images/pets/manul.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "DRAGON",
+        "location": "Native to Westeros, Essos",
+        "image": "../../assets/images/pets/dragon.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "LEMUR",
+        "location": "Native to Madagascar",
+        "image": "../../assets/images/pets/lemur.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "ALLIGATOR",
+        "location": "Native to USA",
+        "image": "../../assets/images/pets/all.png",
+        "meal": "../../assets/icons/meet-fish_icon.svg"
+    },
+    {
+        "name": "RABBIT",
+        "location": "All over the world",
+        "image": "../../assets/images/pets/rabbit.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "GIRAFFE",
+        "location": "Native to Africa",
+        "image": "../../assets/images/pets/giraffe.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "KOALA",
+        "location": "Native to Australia",
+        "image": "../../assets/images/pets/koala.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "ZEBRA",
+        "location": "Native to Africa",
+        "image": "../../assets/images/pets/zebra.png",
+        "meal": "../../assets/icons/banana.svg"
+    },
+    {
+        "name": "BEAVER",
+        "location": "Native to Eurasia, North America",
+        "image": "../../assets/images/pets/beaver.png",
+        "meal": "../../assets/icons/banana.svg"
+    }
+
+]

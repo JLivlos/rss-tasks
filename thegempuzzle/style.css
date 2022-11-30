@@ -1,0 +1,481 @@
+body {
+    background: url('assets/vtm-bloodlines-2.jpg') no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+    body {
+        background-size: auto;
+    }
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.win {
+    display: none;
+    position: absolute;
+    z-index: 31;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -250px;
+    width: 500px;
+    height: 370px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border: dotted 2px white;
+}
+
+.win-text {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.input-winner:active,
+.input-winner:hover,
+.input-winner:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.input-winner {
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 24px;
+}
+
+.win-ok {
+    width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.win-ok:hover,
+.win-ok:active {
+    background-color: grey;
+}
+
+.win.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg-left {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 441px;
+    height: 571px;
+    background: url('assets/Hope_sprite.webp') no-repeat;
+    background-size: 441px 571px;
+    opacity: 1;
+    transition: 3s;
+}
+
+.bg-right {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    width: 360px;
+    height: 585px;
+    background: url('assets/Aisling_sprite.webp') no-repeat;
+    background-size: 360px 585px;
+    opacity: 1;
+    transition: 3s;
+}
+
+.container-wrapper {
+    width: 1920px;
+}
+
+.container {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 50%;
+    width: 570px;
+    margin-left: -285px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin: 0 0 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.sound {
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('assets/volume.svg');
+    background-size: 30px 30px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sound:hover,
+.sound:active {
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+    color: grey;
+    cursor: pointer;
+}
+
+.buttons button:hover,
+.buttons button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.buttons button.none {
+    cursor: context-menu;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: grey;
+}
+
+.info,
+.move-counter,
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.move-counter,
+.timer {
+    gap: 10px;
+}
+
+.game-choice {
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-choice button {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+    color: grey;
+    cursor: pointer;
+}
+
+.game-choice button:hover,
+.game-choice button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.game-choice button.active {
+    cursor: context-menu;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: grey;
+}
+
+.game-table,
+.game-table3,
+.game-table5,
+.game-table6,
+.game-table7,
+.game-table8 {
+    padding: 10px;
+    margin: 0 auto 10px;
+    opacity: 1;
+    transition: 1s;
+}
+
+td {
+    border: solid 2px white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.game-table td,
+.game-table3 td,
+.game-table5 td {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+}
+
+.game-table6 td {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+}
+
+.game-table7 td {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+}
+
+.game-table8 td {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+}
+
+.results-wrapper {
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: dotted 2px white;
+    transform: translate(0, -100%);
+    transition: 1s;
+}
+
+.results-wrapper.active {
+    transform: translate(0, 0%);
+}
+
+h2 {
+    margin: 20px auto 0;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.results-list {
+    width: 96%;
+    padding: 2%;
+}
+
+.player {
+    display: flex;
+    margin: 0 0 5px;
+}
+
+.name {
+    width: 52%;
+    text-align: left;
+}
+
+.mode-result,
+.moves-result,
+.time-result {
+    width: 16%;
+    text-align: center;
+}
+
+.mode-head,
+.name-head,
+.moves-head,
+.time-head {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+}
+
+.results-ok {
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.results-ok:hover,
+.results-ok:active {
+    background-color: grey;
+}
+
+@media screen and (max-width: 1100px) {
+    .bg-left {
+        width: 341px;
+        height: 442px;
+        background-size: 341px 442px;
+    }
+    .bg-right {
+        width: 280px;
+        height: 455px;
+        background-size: 290px 455px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .bg-left {
+        opacity: 0;
+        transition: 3s;
+    }
+    .bg-right {
+        opacity: 0;
+        transition: 3s;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bg-left {
+        display: none;
+    }
+    .bg-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        left: 50%;
+        width: 94%;
+        margin-left: -47%;
+    }
+    h1 {
+        margin-top: 10px;
+    }
+    .win {
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -45%;
+        width: 90%;
+        height: 300px;
+    }
+    .results-wrapper {
+        margin-left: -197px;
+        width: 390px;
+        font-size: 16px;
+    }
+    .game-table5 td {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .game-table6 td,
+    .game-table7 td {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .game-table8 td {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .game-table7 td {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        left: 50%;
+        width: 94%;
+        margin-left: -47%;
+    }
+    h1 {
+        margin: 10px;
+        padding-top: 0;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .buttons button {
+        width: 70%;
+    }
+    .game-table td {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .game-table5 td {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .game-table6 td {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .game-table6 td,
+    .game-table7 td {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+    .game-table8 td {
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+    }
+    .win-text {
+        font-size: 34px;
+    }
+    .results-wrapper {
+        margin-left: -157px;
+        width: 310px;
+        font-size: 14px;
+    }
+    .sound {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+}
