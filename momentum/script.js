@@ -362,7 +362,7 @@ function setBg(timeOfDay, bgNum) {
     const img = new Image();
     img.src = `assets/img/${timeOfDay()}/${randomNum}.jpg`;
     img.onload = () => {
-        body.style.backgroundImage = `url('https://raw.githubusercontent.com/jlivlos/stage1-tasks/assets/images/${timeOfDay()}/${randomNum}.jpg')`;
+        body.style.backgroundImage = `url('assets/img/${timeOfDay()}/${randomNum}.jpg')`;
     };
 };
 
