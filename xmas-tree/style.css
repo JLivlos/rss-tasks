@@ -1,3 +1,7 @@
+.zero {
+    color: white;
+}
+
 body {
     background-image: url('assets/bg.jpg');
     background-position: top;
@@ -12,19 +16,8 @@ body {
     border-radius: 5px;
 }
 
-.tree {
-    position: relative;
-    width: 496px;
-    height: 810px;
-    background-image: url('assets/tree.png');
-}
-
 .shelf {
     position: relative;
-    width: 608px;
-    height: 810px;
-    background-image: url('assets/shelf.webp');
-    background-size: 608px 810px;
 }
 
 .toy {
@@ -32,6 +25,7 @@ body {
     width: 42px;
     height: 50px;
     cursor: pointer;
+    touch-action: none;
 }
 
 .green {

@@ -12,16 +12,20 @@
 
 <body>
     <div class="content">
-        <div class="tree droppable">
-            <div class="cell cell-green"></div>
-            <div class="cell cell-red"></div>
-            <div class="cell cell-red-white"></div>
-            <div class="cell cell-gold"></div>
-            <div class="cell cell-green1"></div>
-            <div class="cell cell-red2"></div>
-            <div class="cell cell-star"></div>
+        <div class="tree-container">
+            <img class="tree-img" src="assets/tree.png" alt="tree" usemap="#tree" width="496" height="810">
+            <map name="tree" class="tree droppable">
+            <area class="droppable" coords="257,31,152,217,109,375,26,654,136,738,303,739,443,708,402,454,363,247,352,208" shape="poly">
+            </area>
+        </map>
         </div>
         <div class="shelf">
+            <img class="shelf-img" src="assets/shelf.png" alt="tree" usemap="#shelf" width="608" height="810">
+            <map name="shelf" class="droppable">
+                <area coords="133,172,482,146" shape="rect"> 
+                <area coords="137,401,474,375" shape="rect">   
+                <area coords="141,625,475,597" shape="rect">                 
+        </map>
             <div class="toy green"></div>
             <div class="toy red"></div>
             <div class="toy red-white"></div>

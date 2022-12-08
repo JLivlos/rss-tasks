@@ -6,15 +6,27 @@ let canDrop = false;
 let currentX;
 let currentY;
 
+
+document.querySelector('body').onselectstart = function(e) {
+    e.preventDefault();
+};
+
+document.querySelector('.tree-img').onmousedown = function(e) {
+    e.preventDefault();
+};
+
+document.querySelector('.shelf-img').onmousedown = function(e) {
+    e.preventDefault();
+};
+
 toys.forEach((toy) => {
 
-    toy.onmousedown = function(event) {
+    toy.onpointerdown = function(event) {
         currentX = `${toy.getBoundingClientRect().left}px`;
         currentY = `${toy.getBoundingClientRect().top}px`;
 
         let shiftX = event.clientX - toy.getBoundingClientRect().left;
         let shiftY = event.clientY - toy.getBoundingClientRect().top;
-
 
         toy.style.position = 'absolute';
         toy.style.zIndex = 1000;
@@ -48,17 +60,17 @@ toys.forEach((toy) => {
             }
         }
 
-        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('pointermove', onMouseMove);
 
-        toy.onmouseup = function() {
+        toy.onpointerup = function() {
             if (canDrop === true) {
-                document.removeEventListener('mousemove', onMouseMove);
-                toy.onmouseup = null;
+                document.removeEventListener('pointermove', onMouseMove);
+                toy.onpointerup = null;
             } else {
                 toy.style.left = currentX;
                 toy.style.top = currentY;
-                document.removeEventListener('mousemove', onMouseMove);
-                toy.onmouseup = null;
+                document.removeEventListener('pointermove', onMouseMove);
+                toy.onpointerup = null;
             }
         };
 
