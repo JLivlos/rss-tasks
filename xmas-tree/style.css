@@ -1,7 +1,3 @@
-.zero {
-    color: white;
-}
-
 body {
     background-image: url('assets/bg.jpg');
     background-position: top;
@@ -9,15 +5,30 @@ body {
 }
 
 .content {
+    width: 1105px;
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: space-around;
+    margin: 40px auto 0;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
+.tree {
+    position: relative;
+}
+
+.tree-img {
+    width: 496px;
+    height: 810px;
+}
+
 .shelf {
     position: relative;
+}
+
+.shelf-img {
+    width: 385px;
+    height: 810px;
 }
 
 .toy {
@@ -30,100 +41,70 @@ body {
 
 .green {
     top: 122px;
-    left: 215px;
+    left: 115px;
     background-image: url('assets/green.png');
     background-size: 42px 50px;
 }
 
 .red {
     top: 122px;
-    left: 300px;
+    left: 200px;
     background-image: url('assets/red.png');
     background-size: 42px 50px;
 }
 
 .red-white {
     top: 352px;
-    left: 215px;
+    left: 115px;
     background-image: url('assets/red-white.png');
     background-size: 42px 50px;
 }
 
 .gold {
     top: 352px;
-    left: 350px;
+    left: 250px;
     background-image: url('assets/gold.png');
     background-size: 42px 50px;
 }
 
 .green1 {
     bottom: 180px;
-    left: 215px;
+    left: 115px;
     background-image: url('assets/green1.png');
     background-size: 42px 50px;
 }
 
 .red2 {
     bottom: 180px;
-    left: 350px;
+    left: 250px;
     background-image: url('assets/red2.png');
     background-size: 42px 50px;
 }
 
 .star {
     bottom: 180px;
-    left: 272px;
+    left: 172px;
     width: 70px;
     height: 70px;
     background-image: url('assets/star.png');
     background-size: 70px 70px;
 }
 
-.cell {
-    position: absolute;
-    width: 42px;
-    height: 50px;
+@media screen and (max-width: 1140px) {
+    .content {
+        width: 881px;
+        justify-content: center;
+    }
 }
 
-.cell-green {
-    top: 150px;
-    left: 210px;
-    background-size: 42px 50px;
+@media screen and (max-width: 881px) {
+    .content {
+        width: 496px;
+        flex-direction: column;
+    }
+    /* TABLET */
 }
 
-.cell-red {
-    top: 260px;
-    right: 150px;
-    background-size: 42px 50px;
-}
-
-.cell-red-white {
-    top: 350px;
-    left: 170px;
-    background-size: 42px 50px;
-}
-
-.cell-gold {
-    top: 450px;
-    right: 100px;
-    background-size: 42px 50px;
-}
-
-.cell-green1 {
-    bottom: 210px;
-    left: 120px;
-    background-size: 42px 50px;
-}
-
-.cell-red2 {
-    bottom: 100px;
-    right: 144px;
-    background-size: 42px 50px;
-}
-
-.cell-star {
-    left: 225px;
-    width: 70px;
-    height: 70px;
-    background-size: 70px 70px;
+@media screen and (max-width: 420px) {
+    /* MOBILE */
 }

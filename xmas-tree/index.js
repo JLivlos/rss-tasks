@@ -1,11 +1,15 @@
-const star = document.querySelector('.star');
 const tree = document.querySelector('.tree');
+const shelf = document.querySelector('.shelf');
 const toys = Array.from(document.querySelectorAll('.toy'));
 let currentDroppable = null;
 let canDrop = false;
 let currentX;
 let currentY;
-
+let currentArea;
+let currentBlocks = {
+    'tree': tree,
+    'shelf': shelf
+};
 
 document.querySelector('body').onselectstart = function(e) {
     e.preventDefault();
@@ -55,6 +59,7 @@ toys.forEach((toy) => {
                 }
                 currentDroppable = droppableBelow;
                 if (currentDroppable) {
+                    currentArea = droppableBelow;
                     canDrop = true;
                 }
             }
@@ -64,6 +69,9 @@ toys.forEach((toy) => {
 
         toy.onpointerup = function() {
             if (canDrop === true) {
+                currentArea.append(toy);
+                toy.style.left = +(toy.style.left).split('px')[0] - currentBlocks[currentArea.name].getBoundingClientRect().left + 'px';
+                toy.style.top = +(toy.style.top).split('px')[0] - currentBlocks[currentArea.name].getBoundingClientRect().top + 'px';
                 document.removeEventListener('pointermove', onMouseMove);
                 toy.onpointerup = null;
             } else {
