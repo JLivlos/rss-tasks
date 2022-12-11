@@ -1,14 +1,15 @@
 body {
+    margin: 0;
     background-image: url('assets/bg.jpg');
     background-position: top;
-    background-size: auto;
+    background-size: 100%;
 }
 
 .content {
-    width: 1105px;
+    width: 360px;
     display: flex;
-    justify-content: space-around;
-    margin: 40px auto 0;
+    flex-direction: column;
+    margin: 10px auto 0;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
@@ -18,93 +19,57 @@ body {
 }
 
 .tree-img {
-    width: 496px;
-    height: 810px;
+    width: 360px;
+    height: 587px;
 }
 
 .shelf {
-    position: relative;
-}
-
-.shelf-img {
-    width: 385px;
-    height: 810px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .toy {
-    position: absolute;
-    width: 42px;
-    height: 50px;
+    width: 75px;
+    height: 100px;
     cursor: pointer;
     touch-action: none;
 }
 
+.blue {
+    background-image: url('assets/blue.png');
+    background-size: 75px 100px;
+}
+
 .green {
-    top: 122px;
-    left: 115px;
     background-image: url('assets/green.png');
-    background-size: 42px 50px;
+    background-size: 75px 100px;
+}
+
+.pink {
+    background-image: url('assets/pink.png');
+    background-size: 75px 100px;
 }
 
 .red {
-    top: 122px;
-    left: 200px;
     background-image: url('assets/red.png');
-    background-size: 42px 50px;
+    background-size: 75px 100px;
 }
 
-.red-white {
-    top: 352px;
-    left: 115px;
-    background-image: url('assets/red-white.png');
-    background-size: 42px 50px;
+.violet {
+    background-image: url('assets/violet.png');
+    background-size: 75px 100px;
 }
 
-.gold {
-    top: 352px;
-    left: 250px;
-    background-image: url('assets/gold.png');
-    background-size: 42px 50px;
-}
-
-.green1 {
-    bottom: 180px;
-    left: 115px;
-    background-image: url('assets/green1.png');
-    background-size: 42px 50px;
-}
-
-.red2 {
-    bottom: 180px;
-    left: 250px;
-    background-image: url('assets/red2.png');
-    background-size: 42px 50px;
+.yellow {
+    background-image: url('assets/yellow.png');
+    background-size: 75px 100px;
 }
 
 .star {
-    bottom: 180px;
-    left: 172px;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-image: url('assets/star.png');
-    background-size: 70px 70px;
-}
-
-@media screen and (max-width: 1140px) {
-    .content {
-        width: 881px;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 881px) {
-    .content {
-        width: 496px;
-        flex-direction: column;
-    }
-    /* TABLET */
-}
-
-@media screen and (max-width: 420px) {
-    /* MOBILE */
+    background-size: 80px 80px;
 }

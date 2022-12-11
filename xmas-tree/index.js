@@ -10,16 +10,13 @@ let currentBlocks = {
     'tree': tree,
     'shelf': shelf
 };
+let treeMap = document.querySelector('.droppable');
 
 document.querySelector('body').onselectstart = function(e) {
     e.preventDefault();
 };
 
 document.querySelector('.tree-img').onmousedown = function(e) {
-    e.preventDefault();
-};
-
-document.querySelector('.shelf-img').onmousedown = function(e) {
     e.preventDefault();
 };
 
@@ -74,12 +71,13 @@ toys.forEach((toy) => {
                 toy.style.top = +(toy.style.top).split('px')[0] - currentBlocks[currentArea.name].getBoundingClientRect().top + 'px';
                 document.removeEventListener('pointermove', onMouseMove);
                 toy.onpointerup = null;
+                if (treeMap.children.length === 8) alert('Если вы закончили украшать елку, нажмите готово')
             } else {
                 toy.style.left = currentX;
                 toy.style.top = currentY;
                 document.removeEventListener('pointermove', onMouseMove);
                 toy.onpointerup = null;
-            }
+            };
         };
 
     };
