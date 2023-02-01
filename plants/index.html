@@ -22,7 +22,7 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__menu__ul">
-                    <li class="header__menu__ul__li">Home</li>
+                    <li class="header__menu__ul__li header__menu__ul__li_active">Home</li>
                     <li class="header__menu__ul__li">Abous us</li>
                     <li class="header__menu__ul__li">Service</li>
                     <li class="header__menu__ul__li">Price</li>
@@ -34,7 +34,7 @@
             <div class="welcome__wrapper">
                 <div class="welcome__img"></div>
                 <div class="welcome__info">
-                    <p class="welcome__title">We grow plants and give you oxygen</p>
+                    <p class="welcome__title">We grow <span class="welcome__title__span">plants</span> and give you oxygen</p>
                     <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     <div class="welcome__button">
                         <button class="button welcome__button_btn">LEARN MORE</button>
@@ -45,7 +45,7 @@
         <section class="about">
             <div class="about__wrapper">
                 <div class="about__info">
-                    <p class="about__title">We are professional experienced gardeners</p>
+                    <p class="about__title">We are <span class="about__title__span">professional experienced</span> gardeners</p>
                     <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                         specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                 </div>
@@ -63,33 +63,33 @@
                     </div>
                 </div>
                 <div class="service__services">
-                    <div class="services__garden">
+                    <div class="services__garden service__item">
                         <div class="services__img garden__img"></div>
                         <p class="services__title">Garden care</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="services__planting">
+                    <div class="services__planting service__item">
                         <div class="services__img planting__img"></div>
                         <p class="services__title">Planting</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="services__lawn">
+                    <div class="services__lawn service__item">
                         <div class="services__img lawn__img"></div>
                         <p class="services__title">Lawn care</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="services__planting2">
+                    <div class="services__planting2 service__item">
                         <div class="services__img planting2__img"></div>
                         <p class="services__title">Planting</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="services__garden2">
+                    <div class="services__garden2 service__item">
                         <div class="services__img garden2__img"></div>
                         <p class="services__title">Garden care</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
-                    <div class="services__planting2">
-                        <div class="services__img planting2__img"></div>
+                    <div class="services__lown2 service__item">
+                        <div class="services__img lown2__img"></div>
                         <p class="services__title">Planting</p>
                         <p class="services__text">Lorem Ipsum has been the industry</p>
                     </div>
@@ -101,29 +101,42 @@
                 <div class="prices__prices">
                     <p class="prices__title">Prices</p>
                     <div class="prices__variants">
-                        <div class="prices__variants__basics">Basics</div>
-                        <div class="prices__variants__standart">Standart</div>
-                        <div class="prices__variants__pro-care">Pro care</div>
+                        <div class="prices__variants__item prices__variants__basics">
+                            <p class="prices__variants__item__text">Basics</p>
+                            <div class="prices__variants__item__btn"></div>
+                        </div>
+                        <div class="prices__variants__item prices__variants__standart">
+                            <p class="prices__variants__item__text">Standart</p>
+                            <div class="prices__variants__item__btn"></div>
+                        </div>
+                        <div class="prices__variants__item prices__variants__pro-care">
+                            <p class="prices__variants__item__text">Pro care</p>
+                            <div class="prices__variants__item__btn"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="prices__right">
-                    <p class="pricer__right__title">Our best gardeners are ready to help you</p>
+                    <p class="prices__right__title">Our best <span class="prices__right__title__span">gardeners</span> are ready to help you</p>
                     <button class="button prices__right__btn">Contact us</button>
-                    <div class="pricer__right__img"></div>
+                    <div class="prices__right__img"></div>
                 </div>
             </div>
         </section>
         <section class="contacts">
+            <p class="contacts__title">Contact us</p>
             <div class="contacts-wrapper">
                 <div class="contacts__img"></div>
-                <p class="contacts__title">Contact us</p>
-                <div class="contacts__menu"></div>
+                <div class="contacts__menu">
+                    <p class="contacts__menu__text">City</p>
+                    <div class="prices__variants__item__btn"></div>
+                </div>
             </div>
         </section>
 
         <div class="footer">
             <div class="footer__wrapper">
                 <div class="footer__credits">
+                    <p class="credits__copy">&copy;</p>
                     <p class="credits__date">2023</p>
                     <a class="credits__github" href="https://github.com/JLivlos" title="github">Github</a>
                 </div>
@@ -131,9 +144,10 @@
                     <a class="credits__github" href="https://rs.school/" title="github">Rolling Scopes School</a>
                 </div>
                 <div class="footer__sm">
-                    <div class="footer__instagram"></div>
-                    <div class="footer__facebook"></div>
-                    <div class="footer__twitter"></div>
+                    <div class="footer__sm__item footer__instagram"></div>
+                    <div class="footer__sm__item footer__facebook"></div>
+                    <div class="footer__sm__item footer__twitter"></div>
+                    <div class="footer__sm__item footer__pinterest"></div>
                 </div>
             </div>
         </div>

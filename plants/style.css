@@ -1,0 +1,446 @@
+.container {
+    width: 1222px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo__img {
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/logo.svg');
+    background-size: 20px 20px;
+}
+
+.header__logo__title {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.header__menu__ul {
+    list-style: none;
+    display: flex;
+    gap: 44px;
+}
+
+.header__menu__ul__li {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+}
+
+.header__menu__ul__li_active {
+    color: #E06733;
+}
+
+.header {
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EDF2EC;
+}
+
+.welcome {
+    background: #EDF2EC;
+}
+
+.welcome__wrapper {
+    display: flex;
+    gap: 214px;
+}
+
+.welcome__info {
+    width: 558px;
+}
+
+.welcome__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+
+.welcome__title__span {
+    color: #499A18;
+}
+
+.welcome__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+}
+
+.button {
+    width: 159px;
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    border: none;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+
+.welcome__img {
+    width: 448px;
+    height: 407px;
+    background-image: url('/assets/leafs.png');
+    background-size: 448px 407px;
+}
+
+.about__wrapper {
+    display: flex;
+    gap: 153px;
+}
+
+.about__info {
+    width: 605px;
+    height: 350px;
+}
+
+.about__title {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.about__title__span {
+    color: #E06733;
+}
+
+.about__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.about__img {
+    width: 464px;
+    height: 479px;
+    background-image: url('/assets/houseplant.png');
+    background-size: 464px 479px;
+}
+
+.service {
+    background: #EDF2EC;
+}
+
+.service__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.service__top {
+    display: flex;
+    gap: 142px;
+    align-items: center;
+}
+
+.service__top__title {
+    width: 306px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.service__top__btns {
+    display: flex;
+    gap: 38px;
+}
+
+.service__top__btn {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.service__services {
+    width: 1222px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 113px;
+}
+
+.service__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.services__img {
+    width: 329px;
+    height: 350px;
+    background-size: 329px 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.garden__img {
+    background-image: url('/assets/first.png');
+}
+
+.planting__img {
+    background-image: url('/assets/second.png');
+}
+
+.lawn__img {
+    background-image: url('/assets/third.png');
+}
+
+.planting2__img {
+    background-image: url('/assets/fourth.png');
+}
+
+.garden2__img {
+    background-image: url('/assets/fifth.png');
+}
+
+.lown2__img {
+    background-image: url('/assets/sixth.png');
+}
+
+.services__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.services__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.prices__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.prices__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.prices__right__title {
+    width: 452px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+}
+
+.prices__right__title__span {
+    color: #499A18;
+}
+
+.prices__right__btn {
+    width: 162px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E06733;
+}
+
+.prices__right__img {
+    width: 284px;
+    height: 318px;
+    background-image: url('assets/leafs.png');
+    background-size: 284px 318px;
+}
+
+.prices__variants {
+    width: 332px;
+    height: 282px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices__variants__item {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EDF2EC;
+    border-radius: 20px;
+}
+
+.prices__variants__item__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.prices__variants__item__btn {
+    width: 16px;
+    height: 16px;
+    background-image: url('/assets/accordion_btn.svg');
+    background-size: 16px 16px;
+}
+
+.contacts {
+    background: #EDF2EC;
+}
+
+.contacts__title {
+    width: 195px;
+    margin: 0 auto;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__img {
+    width: 400px;
+    height: 497px;
+    background-image: url('/assets/contact_woman.png');
+    background-size: 400px 497px;
+}
+
+.contacts__menu {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+.contacts__menu__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__credits {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.credits__copy,
+.credits__date,
+.credits__github,
+.footer__rss {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.credits__github,
+.footer__rss {
+    text-decoration: none;
+}
+
+.footer__sm {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__sm__item {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+}
+
+.footer__instagram {
+    background-image: url('assets/inst.svg');
+}
+
+.footer__facebook {
+    background-image: url('assets/fb.svg');
+}
+
+.footer__twitter {
+    background-image: url('assets/tw.svg');
+}
+
+.footer__pinterest {
+    background-image: url('assets/pinterest.svg');
+}
