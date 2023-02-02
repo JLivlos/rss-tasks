@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .container {
     width: 1222px;
     margin: 0 auto;
@@ -16,7 +20,7 @@
 }
 
 .header__logo__title {
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -31,24 +35,38 @@
 }
 
 .header__menu__ul__li {
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 50px;
     color: #010201;
+    cursor: pointer;
+}
+
+.header__menu__ul__li:hover {
+    color: #499A18;
+}
+
+.header__menu__ul__li_active:hover {
+    color: #E06733;
 }
 
 .header__menu__ul__li_active {
     color: #E06733;
+    cursor: context-menu;
 }
 
 .header {
     height: 134px;
+    background: #EDF2EC;
+    padding-top: 26px;
+}
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #EDF2EC;
 }
 
 .welcome {
@@ -57,7 +75,7 @@
 
 .welcome__wrapper {
     display: flex;
-    gap: 214px;
+    gap: 222px;
 }
 
 .welcome__info {
@@ -65,7 +83,8 @@
 }
 
 .welcome__title {
-    font-family: 'Inter';
+    margin-bottom: 38px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -78,7 +97,8 @@
 }
 
 .welcome__text {
-    font-family: 'Inter';
+    margin-bottom: 49px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -86,10 +106,14 @@
     color: #636060;
 }
 
+.welcome__button {
+    margin-bottom: 125px;
+}
+
 .button {
     width: 159px;
     height: 44px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -100,6 +124,12 @@
     border-radius: 10px;
 }
 
+.button:hover {
+    color: #ffffff;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
 .welcome__img {
     width: 448px;
     height: 407px;
@@ -108,6 +138,7 @@
 }
 
 .about__wrapper {
+    margin-top: 81px;
     display: flex;
     gap: 153px;
 }
@@ -118,7 +149,9 @@
 }
 
 .about__title {
-    font-family: 'Inika';
+    width: 500px;
+    margin-top: 69px;
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -131,7 +164,7 @@
 }
 
 .about__text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -140,6 +173,7 @@
 }
 
 .about__img {
+    margin-bottom: 103px;
     width: 464px;
     height: 479px;
     background-image: url('/assets/houseplant.png');
@@ -163,7 +197,7 @@
 
 .service__top__title {
     width: 306px;
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -177,7 +211,7 @@
 }
 
 .service__top__btn {
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -189,7 +223,25 @@
     border-radius: 5px;
 }
 
+.service__top__btn:hover {
+    color: #ffffff;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
+.service__top__btn_active {
+    color: #ffffff;
+    background-color: #E06733;
+    cursor: context-menu;
+}
+
+.service__top__btn_active:hover {
+    cursor: context-menu;
+}
+
 .service__services {
+    margin-top: 44px;
+    margin-bottom: 120px;
     width: 1222px;
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +288,8 @@
 }
 
 .services__title {
-    font-family: 'Inter';
+    margin: 10px 0 0 0;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -245,12 +298,19 @@
 }
 
 .services__text {
-    font-family: 'Inter';
+    margin-bottom: 33px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #717171;
+}
+
+.services__planting2,
+.services__garden2,
+.services__lown2 {
+    margin-top: -60px;
 }
 
 .prices__wrapper {
@@ -259,7 +319,8 @@
 }
 
 .prices__title {
-    font-family: 'Inter';
+    margin-bottom: 65px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -268,6 +329,7 @@
 }
 
 .prices__right {
+    margin-bottom: 17px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -275,7 +337,7 @@
 
 .prices__right__title {
     width: 452px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -326,7 +388,7 @@
 }
 
 .prices__variants__item__text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -341,14 +403,19 @@
     background-size: 16px 16px;
 }
 
+.prices__variants__item__btn:hover {
+    cursor: pointer;
+}
+
 .contacts {
     background: #EDF2EC;
 }
 
 .contacts__title {
+    padding-top: 62px;
     width: 195px;
     margin: 0 auto;
-    font-family: 'Inika';
+    font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -357,11 +424,13 @@
 }
 
 .contacts-wrapper {
+    margin-top: 34px;
     display: flex;
     justify-content: space-between;
 }
 
 .contacts__img {
+    margin-top: -103px;
     width: 400px;
     height: 497px;
     background-image: url('/assets/contact_woman.png');
@@ -380,7 +449,8 @@
 }
 
 .contacts__menu__text {
-    font-family: 'Inter';
+    padding-left: 21px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -389,7 +459,16 @@
     color: #717171;
 }
 
+.contacts__btn {
+    margin-right: 34px;
+}
+
+.footer {
+    height: 90px;
+}
+
 .footer__wrapper {
+    margin-top: 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -405,7 +484,7 @@
 .credits__date,
 .credits__github,
 .footer__rss {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -420,13 +499,19 @@
 
 .footer__sm {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .footer__sm__item {
     width: 32px;
     height: 32px;
     background-size: 32px 32px;
+}
+
+.footer__sm__item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .footer__instagram {
