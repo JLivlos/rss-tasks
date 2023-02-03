@@ -529,3 +529,148 @@ body {
 .footer__pinterest {
     background-image: url('assets/pinterest.svg');
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 668px;
+    }
+    .header {
+        height: 96px;
+    }
+    .header__menu__ul {
+        gap: 47px;
+    }
+    .welcome__wrapper {
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+    .welcome__info {
+        width: 348px;
+    }
+    .welcome__img {
+        width: 280px;
+        height: 254px;
+        background-size: 280px 254px;
+    }
+    .welcome__title {
+        font-size: 35px;
+        margin-bottom: 29px;
+    }
+    .welcome__text {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 44px;
+    }
+    .welcome__button {
+        margin-bottom: 96px;
+    }
+    .about__wrapper {
+        flex-direction: column;
+        margin-top: -33px;
+        gap: 112px;
+    }
+    .about__title {
+        width: 400px;
+        margin: 73px auto 50px;
+        font-size: 35px;
+        line-height: 46px;
+        padding-left: 154px;
+    }
+    .about__text {
+        width: 668px;
+        font-size: 20px;
+    }
+    .about__img {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 64px;
+        width: 250px;
+        height: 258px;
+        background-size: 250px 258px;
+    }
+    .service__top {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+        margin-top: 22px;
+    }
+    .service__top__title {
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 0;
+    }
+    .service__services {
+        margin-top: 39px;
+        margin-bottom: 58px;
+        width: 668px;
+        gap: 103px;
+    }
+    .services__img {
+        width: 280px;
+        height: 350px;
+        background-size: 280px 350px;
+    }
+    .services__lawn {
+        margin-top: -60px;
+    }
+    .prices__title {
+        font-size: 35px;
+    }
+    .prices__right__title {
+        width: 296px;
+        font-size: 25px;
+    }
+    .prices__right__img {
+        width: 152px;
+        height: 175px;
+        background-size: 152px 175px;
+    }
+    .prices__variants {
+        width: 332px;
+        height: 282px;
+    }
+    .contacts-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contacts__img {
+        margin-top: 0;
+        width: 200px;
+        height: 248px;
+        background-size: 200px 248px;
+    }
+    .footer {
+        height: 181px;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .credits__copy,
+    .credits__date {
+        margin: 0;
+    }
+    .prices__right__title {
+        margin-top: 140px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .prices__right__img {
+        margin-top: 39px;
+        margin-bottom: 63px;
+    }
+    .contacts__title {
+        padding-top: 40px;
+    }
+    .contacts-wrapper {
+        margin-top: 99px;
+    }
+    .contacts__img {
+        margin-top: 250px;
+    }
+    .footer {
+        height: 155px;
+    }
+    .footer__wrapper {
+        margin-top: 15px;
+    }
+}
