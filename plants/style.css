@@ -28,6 +28,15 @@ body {
     color: #000000;
 }
 
+.burger {
+    display: none;
+    width: 40px;
+    height: 27px;
+    background-image: url('/assets/burger.svg');
+    background-size: 40px 27px;
+    cursor: pointer;
+}
+
 .header__menu__ul {
     list-style: none;
     display: flex;
@@ -672,5 +681,171 @@ body {
     }
     .footer__wrapper {
         margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container {
+        width: 330px;
+    }
+    .header {
+        height: 47px;
+        padding-top: 34px;
+    }
+    .burger {
+        display: block;
+    }
+    .header__menu__ul {
+        display: none;
+    }
+    .welcome__img {
+        display: none;
+    }
+    .welcome__title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 22px;
+    }
+    .welcome__text {
+        margin-bottom: 29px;
+    }
+    .welcome__button {
+        margin-bottom: 31px;
+    }
+    .welcome__button_btn {
+        width: 122px;
+        height: 35px;
+        font-size: 14px;
+        border: 1px solid #E06733;
+    }
+    .about__wrapper {
+        margin-top: -44px;
+        gap: 33px;
+    }
+    .about__info {
+        width: 330px;
+    }
+    .about__title {
+        margin: 72px auto 10px;
+        width: 288px;
+        font-size: 25px;
+        line-height: 33px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .about__text {
+        width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .about__img {
+        margin-bottom: 33px;
+        width: 150px;
+        height: 147px;
+        background-size: 150px 147px;
+    }
+    .service__top {
+        margin-top: 5px;
+    }
+    .service__top__btns {
+        width: 270px;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+    .service__top__title {
+        width: 187px;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .service__top__btn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        border: 1px solid #E06733;
+    }
+    .service__top__btn__planting {
+        margin-top: -11px;
+    }
+    .service__services {
+        margin-top: 30px;
+        margin-bottom: 27px;
+        width: 330px;
+        flex-direction: column;
+        align-items: center;
+        gap: 33px;
+    }
+    .service__item {
+        width: 280px;
+    }
+    .services__lawn,
+    .services__planting2,
+    .services__garden2,
+    .services__lown2 {
+        margin-top: 0;
+    }
+    .prices__title {
+        margin-top: 16px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .prices__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prices__variants {
+        gap: 14px;
+        width: 224px;
+        height: 235px;
+    }
+    .prices__variants__item {
+        width: 180px;
+        height: 50px;
+    }
+    .prices__right__title {
+        width: 230px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .prices__right__btn {
+        margin: 0 auto;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        border: 1px solid #E06733;
+    }
+    .prices__right__img {
+        display: none;
+    }
+    .contacts-wrapper {
+        margin-top: 76px;
+    }
+    .contacts__title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .contacts__menu {
+        width: 300px;
+    }
+    .contacts__menu__text {
+        font-size: 20px;
+    }
+    .contacts__img {
+        margin-top: 128px;
+        width: 100px;
+        height: 124px;
+        background-size: 100px 124px;
+    }
+    .footer {
+        height: 140px;
+    }
+    .footer__wrapper {
+        margin-top: 10px;
+    }
+    .credits__copy,
+    .credits__date,
+    .credits__github,
+    .footer__rss {
+        line-height: 44px;
     }
 }
