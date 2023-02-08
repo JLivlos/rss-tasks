@@ -539,7 +539,97 @@ body {
     background-image: url('assets/pinterest.svg');
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
+    .container {
+        width: 1100px;
+    }
+    .welcome__img {
+        width: 284px;
+        height: 318px;
+        background-size: 284px 318px;
+    }
+    .service__services {
+        width: 1085px;
+        gap: 45px;
+    }
+    .services__planting2,
+    .services__garden2,
+    .services__lown2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 1000px;
+    }
+    .about__wrapper {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .about__img {
+        width: 364px;
+        height: 379px;
+        background-size: 364px 379px;
+    }
+    .service__services {
+        width: 950px;
+        gap: 52px;
+    }
+    .services__img {
+        width: 280px;
+        height: 350px;
+        background-size: 280px 350px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        width: 950px;
+    }
+    .welcome__wrapper {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+    .service__top {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .service__top__btns {
+        gap: 15px;
+    }
+    .service__services {
+        width: 900px;
+        gap: 25px;
+    }
+    .about__wrapper {
+        margin-top: 0;
+    }
+    .about__img {
+        margin-top: 100px;
+        width: 264px;
+        height: 279px;
+        background-size: 264px 279px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .container {
+        width: 870px;
+    }
+    .service__services {
+        width: 871px;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .container {
         width: 668px;
     }
@@ -622,6 +712,11 @@ body {
     .services__lawn {
         margin-top: -60px;
     }
+    .services__planting2,
+    .services__garden2,
+    .services__lown2 {
+        margin-top: -60px;
+    }
     .prices__title {
         font-size: 35px;
     }
@@ -684,13 +779,38 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 730px) {
     .container {
-        width: 330px;
+        width: 600px;
     }
-    .header {
-        height: 47px;
-        padding-top: 34px;
+    .welcome__wrapper {
+        gap: 0;
+    }
+    .service__services {
+        width: 600px;
+        gap: 35px;
+    }
+    .services__lawn,
+    .services__planting2,
+    .services__garden2,
+    .services__lown2 {
+        margin-top: 0;
+    }
+    .about__title {
+        padding-left: 0;
+        text-align: center;
+    }
+    .about__text {
+        width: 600px;
+    }
+    .prices__variants {
+        width: 265px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 540px;
     }
     .burger {
         display: block;
@@ -700,6 +820,116 @@ body {
     }
     .welcome__img {
         display: none;
+    }
+    .welcome__info,
+    .about__info,
+    .about__text {
+        width: 540px;
+    }
+    .welcome__title {
+        text-align: center;
+    }
+    .service__services {
+        margin: 30px auto 27px;
+        width: 330px;
+        flex-direction: column;
+        align-items: center;
+        gap: 33px;
+    }
+    .service__item {
+        width: 280px;
+    }
+    .services__lawn,
+    .services__planting2,
+    .services__garden2,
+    .services__lown2 {
+        margin-top: 0;
+    }
+    .prices__title {
+        margin-top: 16px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .prices__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prices__variants {
+        gap: 14px;
+        width: 224px;
+        height: 235px;
+    }
+    .prices__variants__item {
+        width: 180px;
+        height: 50px;
+    }
+    .prices__right__title {
+        width: 230px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .prices__right__btn {
+        margin: 0 auto;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        border: 1px solid #E06733;
+    }
+    .prices__right__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .welcome__info,
+    .about__info,
+    .about__text,
+    .container {
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .welcome__info,
+    .about__info,
+    .about__text,
+    .container {
+        width: 450px;
+    }
+    .service__top__btn {
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .welcome__info,
+    .about__info,
+    .about__text,
+    .container {
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome__info,
+    .about__info,
+    .about__text,
+    .container {
+        width: 400px;
+    }
+    .contacts__menu {
+        width: 410px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .container {
+        width: 330px;
+    }
+    .header {
+        height: 47px;
+        padding-top: 34px;
     }
     .welcome__title {
         font-size: 25px;
@@ -765,57 +995,6 @@ body {
     }
     .service__top__btn__planting {
         margin-top: -11px;
-    }
-    .service__services {
-        margin-top: 30px;
-        margin-bottom: 27px;
-        width: 330px;
-        flex-direction: column;
-        align-items: center;
-        gap: 33px;
-    }
-    .service__item {
-        width: 280px;
-    }
-    .services__lawn,
-    .services__planting2,
-    .services__garden2,
-    .services__lown2 {
-        margin-top: 0;
-    }
-    .prices__title {
-        margin-top: 16px;
-        margin-bottom: 30px;
-        font-size: 25px;
-        text-align: center;
-    }
-    .prices__wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .prices__variants {
-        gap: 14px;
-        width: 224px;
-        height: 235px;
-    }
-    .prices__variants__item {
-        width: 180px;
-        height: 50px;
-    }
-    .prices__right__title {
-        width: 230px;
-        margin-top: 10px;
-        font-size: 20px;
-    }
-    .prices__right__btn {
-        margin: 0 auto;
-        width: 121px;
-        height: 35px;
-        font-size: 15px;
-        border: 1px solid #E06733;
-    }
-    .prices__right__img {
-        display: none;
     }
     .contacts-wrapper {
         margin-top: 76px;
