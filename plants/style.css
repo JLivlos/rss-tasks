@@ -250,22 +250,25 @@
     height: 50px;
     border: 1px solid #E06733;
     border-radius: 5px;
+    transition: 1s;
 }
 
 .service__top__btn:hover {
     color: #ffffff;
-    background-color: #E06733;
+    background-color: #f77943;
     cursor: pointer;
 }
 
 .service__top__btn_active {
     color: #ffffff;
     background-color: #E06733;
-    cursor: context-menu;
+    transition: 1s;
 }
 
-.service__top__btn_active:hover {
-    cursor: context-menu;
+.service__top__btn_grey {
+    pointer-events: none;
+    filter: grayscale();
+    transition: 1s;
 }
 
 .service__services {
@@ -283,6 +286,12 @@
     align-items: center;
     border: 1px solid #E3E1D5;
     border-radius: 20px 20px 20px 20px;
+    transition: 1s;
+}
+
+.service__item_blur {
+    filter: blur(2px);
+    transition: 1s;
 }
 
 .services__img {
@@ -312,7 +321,7 @@
     background-image: url('/assets/fifth.png');
 }
 
-.lown2__img {
+.planting3__img {
     background-image: url('/assets/sixth.png');
 }
 
@@ -338,7 +347,7 @@
 
 .services__planting2,
 .services__garden2,
-.services__lown2 {
+.services__planting3 {
     margin-top: -60px;
 }
 
@@ -574,7 +583,7 @@
     }
     .services__planting2,
     .services__garden2,
-    .services__lown2 {
+    .services__planting3 {
         margin-top: 0;
     }
 }
@@ -734,7 +743,7 @@
     }
     .services__planting2,
     .services__garden2,
-    .services__lown2 {
+    .services__planting3 {
         margin-top: -60px;
     }
     .prices__title {
@@ -813,7 +822,7 @@
     .services__lawn,
     .services__planting2,
     .services__garden2,
-    .services__lown2 {
+    .services__planting3 {
         margin-top: 0;
     }
     .about__title {
@@ -896,7 +905,7 @@
     .services__lawn,
     .services__planting2,
     .services__garden2,
-    .services__lown2 {
+    .services__planting3 {
         margin-top: 0;
     }
     .prices__title {
