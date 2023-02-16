@@ -1,7 +1,11 @@
-.body {
-    margin: 0;
+html {
     scroll-behavior: smooth;
+}
+
+.body {
+    margin: 0;    
     overflow-y: auto;
+    height: 100%;
 }
 
 .body_no-scroll {
@@ -73,11 +77,21 @@
     cursor: pointer;
 }
 
-.header__menu__ul__li:hover {
+.header__menu__ul__li a {
+    color: #010201;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__menu__ul__li a:visited {
+    color: #010201;
+}
+
+.header__menu__ul__li a:hover {
     color: #499A18;
 }
 
-.header__menu__ul__li_active:hover {
+.header__menu__ul__li_active a:hover {
     color: #E06733;
 }
 
