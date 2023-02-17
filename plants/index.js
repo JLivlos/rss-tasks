@@ -148,6 +148,18 @@ orderBtns.forEach(elem => {
     });
 });
 
+//CCONTACTS
+const contactsBtn = document.querySelector('.contacts__btn');
+const contactsItems = document.querySelector('.contacts__menu__items');
+const contactsHead = document.querySelector('.contacts__menu');
+const contactsHeadCity = document.querySelector('.contacts__menu__text');
+
+contactsBtn.addEventListener('click', () => {
+    contactsBtn.classList.toggle('contacts__btn_active');
+    contactsHead.classList.toggle('contacts__menu_active');
+    contactsItems.classList.toggle('contacts__menu__items_active');    
+});
+
 //FUNCTIONS
 
 function openBurgermenu() {
