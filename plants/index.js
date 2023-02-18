@@ -148,16 +148,56 @@ orderBtns.forEach(elem => {
     });
 });
 
-//CCONTACTS
+//CONTACTS
 const contactsBtn = document.querySelector('.contacts__btn');
 const contactsItems = document.querySelector('.contacts__menu__items');
 const contactsHead = document.querySelector('.contacts__menu');
 const contactsHeadCity = document.querySelector('.contacts__menu__text');
 
 contactsBtn.addEventListener('click', () => {
-    contactsBtn.classList.toggle('contacts__btn_active');
-    contactsHead.classList.toggle('contacts__menu_active');
-    contactsItems.classList.toggle('contacts__menu__items_active');    
+    contactsBtn.classList.toggle('contacts__btn_active');    
+    contactsItems.classList.toggle('contacts__menu__items_active');
+    if (contactsHead.innerText === 'City') contactsHead.classList.toggle('contacts__menu_active');       
+});
+
+const canandaiguaBtn = document.querySelector('.contacts__menu__item__cana');
+const newYorkBtn = document.querySelector('.contacts__menu__item__new');
+const yonkersBtn = document.querySelector('.contacts__menu__item__yonk');
+const sherrillBtn = document.querySelector('.contacts__menu__item__sh');
+const cityInfo = document.querySelector('.contacts__cities__city__info');
+const phoneInfo = document.querySelector('.contacts__cities__phone__info');
+const addressInfo = document.querySelector('.contacts__cities__address__info');
+const cityCard = document.querySelector('.contacts__cities');
+const callBtn = document.querySelector('.contacts__cities__btn');
+const call = document.querySelector('.contacts__cities__btn');
+const canandaigua = [canandaiguaBtn, 'Canandaigua, NY', '+1	585	393 0001', '151 Charlotte Street', '<a class="phone_number" href="tel:+15853930001">Call us</a>'];
+const newYork = [newYorkBtn, 'New York City', '+1 212 456 0002', '9 East 91st Street', '<a class="phone_number" href="tel:+12124560002">Call us</a>'];
+const yonkers = [yonkersBtn, 'Yonkers, NY', '+1	914	678 0003', '511 Warburton Ave', '<a class="phone_number" href="tel:+19146780003">Call us</a>'];
+const sherrill = [sherrillBtn, 'Sherrill, NY', '+1 315 908 0004', '14 WEST Noyes BLVD', '<a class="phone_number" href="tel:+13159080004">Call us</a>'];
+
+canandaiguaBtn.addEventListener('click', () => {
+    fillCityCard(canandaigua); 
+    newYorkBtn.classList.remove('contacts__menu__item_active'); 
+    yonkersBtn.classList.remove('contacts__menu__item_active');
+    sherrillBtn.classList.remove('contacts__menu__item_active');  
+});
+newYorkBtn.addEventListener('click', () => {
+    fillCityCard(newYork);
+    canandaiguaBtn.classList.remove('contacts__menu__item_active'); 
+    yonkersBtn.classList.remove('contacts__menu__item_active');
+    sherrillBtn.classList.remove('contacts__menu__item_active'); 
+});
+yonkersBtn.addEventListener('click', () => {
+    fillCityCard(yonkers);
+    newYorkBtn.classList.remove('contacts__menu__item_active'); 
+    canandaiguaBtn.classList.remove('contacts__menu__item_active');
+    sherrillBtn.classList.remove('contacts__menu__item_active');  
+});
+sherrillBtn.addEventListener('click', () => {
+    fillCityCard(sherrill);
+    newYorkBtn.classList.remove('contacts__menu__item_active'); 
+    canandaiguaBtn.classList.remove('contacts__menu__item_active');
+    yonkersBtn.classList.remove('contacts__menu__item_active');  
 });
 
 //FUNCTIONS
@@ -220,4 +260,16 @@ function countActivePrices() {
         if (e.classList.contains('prices__variants__item__btn_active')) counter++;
     });
     return counter;
+};
+
+function fillCityCard(city) {
+    city[0].classList.add('contacts__menu__item_active');
+    contactsHeadCity.textContent = city[1];
+    cityInfo.textContent = city[1];
+    phoneInfo.textContent = city[2];
+    addressInfo.textContent = city[3];
+    contactsItems.classList.remove('contacts__menu__items_active');
+    cityCard.classList.add('contacts__cities_active');
+    contactsBtn.classList.remove('contacts__btn_active');
+    callBtn.innerHTML = city[4];    
 };

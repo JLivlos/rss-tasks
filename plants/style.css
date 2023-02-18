@@ -663,6 +663,80 @@ html {
   cursor: context-menu;
 }
 
+.contacts__menu__item:checked {
+  color: #717171;
+  border-bottom: 1px solid #717171;
+  pointer-events: none;
+  cursor: context-menu;
+}
+
+.contacts__cities {
+  display: none;
+  width: 448px;
+  margin-top: 47px;
+  background: #edf2ec;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+}
+
+.contacts__cities_active {
+  display: block;
+}
+
+.contacts__cities__wrapper {
+  color: #000000;
+}
+
+.contacts__cities__flexbox {
+  display: flex;
+  gap: 25px;
+  margin: 17px 0 0 33px;
+}
+
+.contacts__cities__flexbox p {
+  margin: 0;
+}
+
+.contacts__cities__btn {
+  padding: 0;
+  margin: 24px 163px 32px;
+  width: 122px;
+  height: 26px;
+  border: 1px solid #e06733;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phone_number {
+  display: block;
+  width: 122px;
+  height: 26px;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  color: #717171;
+}
+
+.contacts__cities__btn:hover {
+  background-color: #e67f53;
+}
+
+.contacts__cities__btn:hover .phone_number {
+  color: #000000;
+}
+
 .footer {
   height: 90px;
 }
