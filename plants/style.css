@@ -39,7 +39,7 @@ html {
 .header__logo__img {
   width: 20px;
   height: 20px;
-  background-image: url("/assets/logo.svg");
+  background-image: url("assets/logo.svg");
   background-size: 20px 20px;
 }
 
@@ -56,7 +56,7 @@ html {
   display: none;
   width: 40px;
   height: 27px;
-  background-image: url("/assets/burger.svg");
+  background-image: url("assets/burger.svg");
   background-size: 40px 27px;
   cursor: pointer;
 }
@@ -177,7 +177,7 @@ html {
 .welcome__img {
   width: 448px;
   height: 407px;
-  background-image: url("/assets/leafs.png");
+  background-image: url("assets/leafs.png");
   background-size: 448px 407px;
 }
 
@@ -220,7 +220,7 @@ html {
   margin-bottom: 103px;
   width: 464px;
   height: 479px;
-  background-image: url("/assets/houseplant.png");
+  background-image: url("assets/houseplant.png");
   background-size: 464px 479px;
 }
 
@@ -317,27 +317,27 @@ html {
 }
 
 .garden__img {
-  background-image: url("/assets/first.png");
+  background-image: url("assets/first.png");
 }
 
 .planting__img {
-  background-image: url("/assets/second.png");
+  background-image: url("assets/second.png");
 }
 
 .lawn__img {
-  background-image: url("/assets/third.png");
+  background-image: url("assets/third.png");
 }
 
 .planting2__img {
-  background-image: url("/assets/fourth.png");
+  background-image: url("assets/fourth.png");
 }
 
 .garden2__img {
-  background-image: url("/assets/fifth.png");
+  background-image: url("assets/fifth.png");
 }
 
 .planting3__img {
-  background-image: url("/assets/sixth.png");
+  background-image: url("assets/sixth.png");
 }
 
 .services__title {
@@ -457,13 +457,13 @@ html {
 .contacts__btn {
   width: 16px;
   height: 16px;
-  background-image: url("/assets/accordion_btn.svg");
+  background-image: url("assets/accordion_btn.svg");
   background-size: 16px 16px;
 }
 
 .prices__variants__item__btn_active,
 .contacts__btn_active {
-  background-image: url("/assets/accordion_btn_close.svg");
+  background-image: url("assets/accordion_btn_close.svg");
 }
 
 .prices__variants__item__btn:hover,
@@ -576,7 +576,7 @@ html {
   margin-top: -103px;
   width: 400px;
   height: 497px;
-  background-image: url("/assets/contact_woman.png");
+  background-image: url("assets/contact_woman.png");
   background-size: 400px 497px;
 }
 
@@ -1083,7 +1083,7 @@ html {
   }
   .burger_close {
     z-index: 11;
-    background: url("/assets/close.svg") no-repeat;
+    background: url("assets/close.svg") no-repeat;
     background-size: 28px 27px;
     transition: 200ms;
   }
