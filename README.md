@@ -4,3 +4,4 @@
 4. Online zoo - https://jlivlos.github.io/rss-tasks/online-zoo/pages/main/, https://jlivlos.github.io/rss-tasks/online-zoo/pages/donate/
 5. The Gem Puzzle - https://jlivlos.github.io/rss-tasks/thegempuzzle/
 6. Name the Song - https://jlivlos.github.io/rss-tasks/songbird/
+7. Plants - https://jlivlos.github.io/rss-tasks/plants/
