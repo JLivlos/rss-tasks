@@ -2,6 +2,7 @@
 const burgerIcon = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.header__menu__ul');
 const overlay = document.querySelector('.overlay');
+const burgerItems = Array.from(document.querySelectorAll('.header__menu__item'));
 
 burgerIcon.addEventListener('click', (e) => {
     if (!burgerMenu.classList.contains('header__menu__ul_active')) {
@@ -12,6 +13,10 @@ burgerIcon.addEventListener('click', (e) => {
 });
 
 overlay.addEventListener('click', closeBurgerMenu);
+
+burgerMenu.addEventListener('click', (e) => {
+if (!e.target.classList.contains('header__menu__ul__li_active')) closeBurgerMenu();
+});
 
 //SERVICES
 const serviceBtns = Array.from(document.querySelectorAll('.service__top__btn'));
@@ -105,8 +110,7 @@ const proHead = document.querySelector('.prices__variants__pro-care');
 const proInfo = document.querySelector('.prices__variants__pro-care__info');
 const orderBtns = Array.from(document.querySelectorAll('.prices__variants__item__info__btn'));
 
-basicsBtn.addEventListener('click', (e) => {
-    console.log()
+basicsBtn.addEventListener('click', (e) => {    
     if (basicsBtn.classList.contains('prices__variants__item__btn_active')) {
         closePrice(basicsBtn, basicsHead, basicsInfo);
     } else {
@@ -200,6 +204,27 @@ sherrillBtn.addEventListener('click', () => {
     yonkersBtn.classList.remove('contacts__menu__item_active');  
 });
 
+//BUTTONS, ICONS
+
+document.querySelector('.welcome__button_btn').addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
+document.querySelector('.prices__right__btn').addEventListener('click', () => {
+    document.getElementById('contacts').scrollIntoView();
+});
+document.querySelector('.footer__instagram'). addEventListener('click', () => {
+    window.open('https://www.instagram.com/', '_blank');
+});
+document.querySelector('.footer__facebook'). addEventListener('click', () => {
+    window.open('https://www.facebook.com/', '_blank');
+});
+document.querySelector('.footer__twitter'). addEventListener('click', () => {
+    window.open('https://twitter.com/', '_blank');
+});
+document.querySelector('.footer__pinterest'). addEventListener('click', () => {
+    window.open('https://www.pinterest.com/', '_blank');
+});
+
 //FUNCTIONS
 
 function openBurgermenu() {
@@ -271,5 +296,6 @@ function fillCityCard(city) {
     contactsItems.classList.remove('contacts__menu__items_active');
     cityCard.classList.add('contacts__cities_active');
     contactsBtn.classList.remove('contacts__btn_active');
+    document.querySelector('.contacts__img').classList.add('contacts__img_active-city');
     callBtn.innerHTML = city[4];    
 };

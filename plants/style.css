@@ -78,6 +78,7 @@ html {
 }
 
 .header__menu__ul__li a {
+  display: block;
   color: #010201;
   list-style: none;
   text-decoration: none;
@@ -1000,12 +1001,19 @@ html {
   .contacts-wrapper {
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 99px;
+  }
+  .contacts__title {
+    padding-top: 40px;
   }
   .contacts__img {
-    margin-top: 0;
+    margin-top: 250px;
     width: 200px;
     height: 248px;
     background-size: 200px 248px;
+  }
+  .contacts__img_active-city {
+    margin-top: 30px;
   }
   .footer {
     height: 181px;
@@ -1025,15 +1033,6 @@ html {
   .prices__right__img {
     margin-top: 39px;
     margin-bottom: 63px;
-  }
-  .contacts__title {
-    padding-top: 40px;
-  }
-  .contacts-wrapper {
-    margin-top: 99px;
-  }
-  .contacts__img {
-    margin-top: 250px;
   }
   .footer {
     height: 155px;
@@ -1113,8 +1112,11 @@ html {
     width: 150px;
     text-align: center;
   }
-  .header__menu__ul_active .header__menu__ul__li:hover {
+  .header__menu__ul__li:hover {
     background-color: white;
+  }
+  .header__menu__ul__li_active:hover {
+    background-color: transparent;
   }
   .welcome__img {
     display: none;
@@ -1232,8 +1234,12 @@ html {
     width: 400px;
   }
   .contacts__menu,
-  .contacts__menu__items {
+  .contacts__menu__items,
+  .contacts__cities {
     width: 410px;
+  }
+  .contacts__cities__btn {
+    margin: 24px 144px 32px;
   }
 }
 
@@ -1318,8 +1324,22 @@ html {
     text-align: center;
   }
   .contacts__menu,
-  .contacts__menu__items {
+  .contacts__menu__items,
+  .contacts__cities {
     width: 300px;
+    line-height: 18px;
+  }
+
+  .contacts__cities__flexbox p {
+    margin: 20px 0;
+  }
+
+  .contacts__cities__btn {
+    margin: 24px 89px 32px;
+  }
+  .contacts__cities__flexbox {
+    gap: 5px;
+    margin: 17px 17px 0 17px;
   }
   .contacts__menu__text {
     font-size: 20px;
